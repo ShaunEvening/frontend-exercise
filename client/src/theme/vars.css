@@ -1,0 +1,38 @@
+:root {
+  /* Blurple */
+  --blurple: #6565ec;
+  --purple-1: var(--iris-1);
+  --purple-2: var(--iris-2);
+  --purple-3: var(--iris-3);
+  --purple-4: var(--iris-4);
+  --purple-5: var(--iris-5);
+  --purple-6: var(--iris-6);
+  --purple-7: var(--iris-7);
+  --purple-8: var(--iris-8);
+  --purple-9: var(--blurple);
+  --purple-10: var(--iris-10);
+  --purple-11: var(--iris-11);
+  --purple-12: var(--iris-12);
+  --purple-a1: var(--iris-a1);
+  --purple-a2: var(--iris-a2);
+  --purple-a3: var(--iris-a3);
+  --purple-a4: var(--iris-a4);
+  --purple-a5: var(--iris-a5);
+  --purple-a6: var(--iris-a6);
+  --purple-a7: var(--iris-a7);
+  --purple-a8: var(--iris-a8);
+  --purple-a9: var(--blurple);
+  --purple-a10: var(--iris-a10);
+  --purple-a11: var(--iris-a11);
+  --purple-a12: var(--iris-a12);
+  --purple-contrast: var(--iris-contrast);
+  --purple-surface: var(--iris-surface);
+  --purple-indicator: var(--iris-indicator);
+  --purple-track: var(--iris-track);
+
+  /* Typography */
+  --default-font-family: "Untitled Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji";
+  --em-font-family: georgia, times, times new roman, serif;
+}
