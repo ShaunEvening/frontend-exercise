@@ -4,12 +4,12 @@ import { Box, Container, Flex, Tabs, TextField } from "@radix-ui/themes";
 import { MagnifyingGlassIcon, PlusIcon } from "@radix-ui/react-icons";
 
 import { Button } from "./components/button";
+import { Alert } from "./components/alert";
 import { UsersTable } from "./users-table.component";
 import { RolesTable } from "./roles-table.component";
 
 import { useGetUsersQuery } from "./app/services/users.service";
 import { useGetRolesQuery } from "./app/services/roles.service";
-import { Alert } from "./components/alert/alert.component";
 
 function App() {
   const [search, setSearch] = React.useState<string>("");
@@ -62,7 +62,7 @@ function App() {
             {(usersError || rolesError) && (
               <Box mb="4">
                 <Alert type="error">
-                  There was an error fetching data. Please try again later.
+                  There was an error fetching user data. Please try again later.
                 </Alert>
               </Box>
             )}
@@ -107,6 +107,13 @@ function App() {
           </Tabs.Content>
 
           <Tabs.Content value="Roles">
+            {rolesError && (
+              <Box mb="4">
+                <Alert type="error">
+                  There was an error fetching role data. Please try again later.
+                </Alert>
+              </Box>
+            )}
             <RolesTable
               roles={roles}
               isLoading={isLoadingRoles || isFetchingRoles}
